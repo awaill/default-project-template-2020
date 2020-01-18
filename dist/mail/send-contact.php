@@ -53,7 +53,7 @@
       $email->Subject = '# | Enquiry';
       $email->Body = $message;
 
-      $email->AddAddress('willcrawford162@gmail.com');
+      $email->AddAddress('#');
 
       $respond_message = file_get_contents('email-reply.html');
       $respond_message = str_replace('{{user_input_name}}', $user_input_name, $respond_message);
@@ -63,7 +63,7 @@
       $respond_email->IsHTML(true);
       $respond_email->SMTPDebug = 0;
 
-      $respond_email->From = 'willcrawford162@gmail.com';
+      $respond_email->From = '#';
       $respond_email->FromName = '#';
       $respond_email->Subject = '# | Thank you for getting in touch!';
       $respond_email->Body = $respond_message;
