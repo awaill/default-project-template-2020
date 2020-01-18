@@ -1,0 +1,43 @@
+/*  Colours */
+$white: #FFFFFF;
+$gray: #D3D3D3;
+$black: #191919;
+$blue: #1989CA;
+
+/*  Fonts  */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+$font: 'Open Sans',sans-serif;
+
+/*  Media queries */
+$mobile: "(min-width: 750px)";
+$tablet: "(min-width: 1000px)";
+$desktop: "(min-width: 1400px)";
+
+/* Misc */
+$max-width: 1400px;
+$shadow: 0 5px 10px 0 rgba(0,0,0,.05);
+$ease: ease all 0.3s;
+
+/* Default classes */
+.default-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.default-psudeo {
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.default-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
