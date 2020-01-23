@@ -26,7 +26,7 @@ function scssTask(){
     );
 }
 
-// Compile JS and move to dist folder.
+// Compile JS and move to dist folder
 function jsTask(){
     return src([
           files.jsPath
