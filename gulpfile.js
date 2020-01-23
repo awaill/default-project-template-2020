@@ -15,7 +15,7 @@ const files = {
     jsPath: 'app/js/**/*.js'
 }
 
-// Compile SCSS and move to dist folder.
+// Compile SCSS and move to dist folder
 function scssTask(){
     return src(files.scssPath)
         .pipe(sourcemaps.init())
